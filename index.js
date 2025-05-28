@@ -7,9 +7,9 @@ let attempts = 0
 let playing = true
 
 while (playing) {
-    guess = Number(prompt(`Guess a number between ${minNumber} and ${maxNumber}:`));
+    guess = Number(prompt(`Um número entre ${minNumber} e ${maxNumber}:`));
     if (guess < minNumber || guess > maxNumber || isNaN(guess)) {
-        alert(`Please enter a valid number between ${minNumber} and ${maxNumber}.`);
+        alert(`Por favor, insira um número entre ${minNumber} e ${maxNumber}.`);
     } else {
         attempts++
         if (guess < answer) {
